@@ -2,7 +2,6 @@
 
 A responsive frontend interface for a simple reading-tracker web app, built for **DecodeLabs' Full Stack Internship — Project 1: The Responsive Layout**.
 
-Live demo: _add your Netlify/GitHub Pages link here once deployed_
 
 ## What this is
 
@@ -50,15 +49,6 @@ No build step required — it's static HTML/CSS/JS.
    - Install the **Live Server** extension
    - Right-click `index.html` → **Open with Live Server**
 
-## Deploying it
-
-Quickest option — no account needed:
-
-1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
-2. Drag the whole project folder onto the page
-3. Netlify returns a live URL instantly
-
-For a persistent portfolio link, push the folder to a GitHub repo and enable **GitHub Pages** under Settings → Pages.
 
 ## Roadmap / things a real version would need next
 
