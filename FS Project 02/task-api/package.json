@@ -1,0 +1,20 @@
+{
+  "name": "task-api",
+  "version": "1.0.0",
+  "description": "Project 2 - Backend API Development (DecodeLabs Full Stack Track)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/"
+  },
+  "keywords": ["express", "rest-api", "backend"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  }
+}
