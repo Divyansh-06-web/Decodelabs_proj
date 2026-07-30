@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapters — Reading, Unbound</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav-bar">
+    <a href="#top" class="logo" aria-label="Chapters home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Chapters
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <a href="#library">Library</a>
+      <a href="#stats">Stats</a>
+      <a href="#goals">Goals</a>
+      <a href="#" class="btn btn-primary nav-cta">Add a book</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <section class="hero container" id="top">
+    <div>
+      <p class="eyebrow">Your reading, tracked gently</p>
+      <h1>Every page <em>counts</em> toward something.</h1>
+      <p class="lede">Chapters keeps a quiet record of what you're reading, what you've finished, and how far you've come — no streak-shaming, just a shelf that grows with you.</p>
+      <div class="hero-actions">
+        <a href="#library" class="btn btn-primary">Go to my shelf</a>
+        <a href="#stats" class="btn btn-ghost">See my stats</a>
+      </div>
+    </div>
+
+    <div class="now-reading-card">
+      <div class="progress-ring-wrap">
+        <svg width="92" height="92" viewBox="0 0 92 92">
+          <circle class="ring-bg" cx="46" cy="46" r="40" fill="none" stroke-width="8"></circle>
+          <circle class="ring-value" id="ringValue" cx="46" cy="46" r="40" fill="none" stroke-width="8"
+            stroke-dasharray="251.2" stroke-dashoffset="150.7"></circle>
+        </svg>
+        <span class="ring-label" id="ringLabel">40%</span>
+      </div>
+      <div class="now-reading-info">
+        <p class="kicker">Currently reading</p>
+        <h3>The Night Circus</h3>
+        <p class="author">Erin Morgenstern &middot; page 210 of 528</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container page-body">
+
+    <section id="library" aria-labelledby="library-heading">
+      <div class="section-heading">
+        <h2 id="library-heading">My shelf</h2>
+        <span class="sub">12 books this year</span>
+      </div>
+
+      <div class="filter-tabs" role="group" aria-label="Filter books by status">
+        <button class="filter-tab" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-tab" data-filter="reading" aria-pressed="false">Reading</button>
+        <button class="filter-tab" data-filter="finished" aria-pressed="false">Finished</button>
+        <button class="filter-tab" data-filter="want" aria-pressed="false">Want to read</button>
+      </div>
+
+      <div class="shelf-grid" id="shelfGrid">
+        <article class="book-card" data-status="reading">
+          <div class="book-cover" style="--cover-a:#7C6A48;--cover-b:#A0D4E0;">The Night Circus</div>
+          <div class="book-meta">
+            <p class="title">The Night Circus</p>
+            <p class="author">Erin Morgenstern</p>
+          </div>
+          <span class="status-chip reading">Reading</span>
+        </article>
+
+        <article class="book-card" data-status="finished">
+          <div class="book-cover" style="--cover-a:#5C93A3;--cover-b:#F2F0EA;">Educated</div>
+          <div class="book-meta">
+            <p class="title">Educated</p>
+            <p class="author">Tara Westover</p>
+          </div>
+          <span class="status-chip finished">Finished</span>
+        </article>
+
+        <article class="book-card" data-status="want">
+          <div class="book-cover" style="--cover-a:#A5936F;--cover-b:#2E2A24;">Piranesi</div>
+          <div class="book-meta">
+            <p class="title">Piranesi</p>
+            <p class="author">Susanna Clarke</p>
+          </div>
+          <span class="status-chip want">Want to read</span>
+        </article>
+
+        <article class="book-card" data-status="finished">
+          <div class="book-cover" style="--cover-a:#2E2A24;--cover-b:#A0D4E0;">Klara and the Sun</div>
+          <div class="book-meta">
+            <p class="title">Klara and the Sun</p>
+            <p class="author">Kazuo Ishiguro</p>
+          </div>
+          <span class="status-chip finished">Finished</span>
+        </article>
+
+        <article class="book-card" data-status="reading">
+          <div class="book-cover" style="--cover-a:#7C6A48;--cover-b:#5C93A3;">Braiding Sweetgrass</div>
+          <div class="book-meta">
+            <p class="title">Braiding Sweetgrass</p>
+            <p class="author">Robin Wall Kimmerer</p>
+          </div>
+          <span class="status-chip reading">Reading</span>
+        </article>
+
+        <article class="book-card" data-status="want">
+          <div class="book-cover" style="--cover-a:#A0D4E0;--cover-b:#A5936F;">Tomorrow, and Tomorrow, and Tomorrow</div>
+          <div class="book-meta">
+            <p class="title">Tomorrow, and Tomorrow, and Tomorrow</p>
+            <p class="author">Gabrielle Zevin</p>
+          </div>
+          <span class="status-chip want">Want to read</span>
+        </article>
+      </div>
+    </section>
+
+    <aside class="stats-panel" id="stats" aria-labelledby="stats-heading">
+      <h2 id="stats-heading" style="font-size:1.1rem;">This year</h2>
+
+      <div class="stat-card">
+        <div class="num">12</div>
+        <div class="label">Books finished in 2026</div>
+      </div>
+
+      <div class="stat-card alt">
+        <div class="num">3,842</div>
+        <div class="label">Pages read this month</div>
+        <div class="streak-row" aria-hidden="true">
+          <div class="streak-day done"></div>
+          <div class="streak-day done"></div>
+          <div class="streak-day done"></div>
+          <div class="streak-day done"></div>
+          <div class="streak-day"></div>
+          <div class="streak-day done"></div>
+          <div class="streak-day"></div>
+        </div>
+      </div>
+
+      <div class="goal-card" id="goals">
+        <p class="kicker">2026 goal</p>
+        <h3 style="margin-top:0.25rem;">12 of 24 books</h3>
+        <div class="goal-track">
+          <div class="goal-fill" style="--goal-pct:50%;"></div>
+        </div>
+        <p class="sub" style="margin-top:0.6rem;margin-bottom:0;">Halfway there — 6 months left to go.</p>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#top" class="logo" style="color:var(--paper);" aria-label="Chapters home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Chapters
+      </a>
+      <p style="max-width:32ch;margin-top:0.75rem;color:rgba(242,240,234,0.7);font-size:0.9rem;">A calm place to track what you read, one page at a time.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul class="footer-links">
+        <li><a href="#library">My shelf</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#goals">Goals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>DecodeLabs</h3>
+      <ul class="footer-links">
+        <li><a href="https://www.decodelabs.tech">decodelabs.tech</a></li>
+        <li><a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 Chapters &mdash; a DecodeLabs Project 1 build.</span>
+    <span>Greater Lucknow, India</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
